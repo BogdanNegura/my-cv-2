@@ -1,8 +1,21 @@
 -
     var myFullName = 'Bogdan Negura'
     var myJobTitle = 'web developer'
+    var socialList = [
+        {icon:'facebook2', url: 'https://www.facebook.com/negura.constantinbogdan'},
+        {icon:'youtube', url: 'https://www.youtube.com/'},
+        {icon:'github', url: 'https://https://github.com/BogdanNegura'},
+        {icon:'linkedin2', url: 'https://www.linkedin.com/in/bogdan-negura-267349177/'},
+        {icon:'google-plus3', url: 'https://plus.google.com/u/0/110283545212780986524'},
+        {icon:'twitter', url: 'https://twitter.com/'},
+    ]
 #landing-page
 .landing-page
     .landing-page__wrapper
         h1.landing-page__name=myFullName
         h2.landing-page__title=myJobTitle
+        ul.landing-page__social
+            each social in socialList
+                li.landing-page__item
+                    label.landing-page__label(for="")
+                        span(class=`my-cv-2__icon--${social.icon}`)
