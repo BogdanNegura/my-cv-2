@@ -11,7 +11,7 @@
     }
 
     var coolStuff = {
-        title:'ttt',
+        title:'Grab CoolStuff',
         buttonList: [
             {
                 url: 'https://github.com/BogdanNegura',
@@ -44,7 +44,9 @@
     .about-me__title=achievement.title
     .about-me__content=achievement.content
 
-    each button in coolStuff.buttonList
-        a(href=button.url)
-            span=button.label
-            span(class=`my-cv-2__icon--${button.icon}`)
+    .about-me__title=coolStuff.title
+    .about-me__link-list
+        each button in coolStuff.buttonList
+            a(href=button.url)
+                span=button.label
+                span(class=`my-cv-2__icon--${button.icon}`)
