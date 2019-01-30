@@ -47,6 +47,6 @@
     .about-me__title=coolStuff.title
     .about-me__link-list
         each button in coolStuff.buttonList
-            a(href=button.url)
-                span=button.label
+            a.about-me__link(href=button.url)
+                span.about-me__link-description=button.label
                 span(class=`my-cv-2__icon--${button.icon}`)
