@@ -1,1 +1,50 @@
-#about-me hi
+//- data come here
+-
+    var header = '#about-me'
+    var imagePath = "asset/image/me.jpg"
+    var myFullName = "Bogdan Negura"
+    var myTitle = "Junior Web Developer"
+    var slogan = 'A better me is coming'
+    var achievement = {
+        title:'achievement',
+        content: 'my life changed when i start to learn coding'
+    }
+
+    var coolStuff = {
+        title:'ttt',
+        buttonList: [
+            {
+                url: 'https://github.com/BogdanNegura',
+                icon: 'github',
+                label: 'Click to visit the Github project source'
+            },
+            {
+                url: "asset/doc/cv1.docx",
+                icon: "file-word",
+                label: "Click to download the full experience Microsoft Word version"
+            },
+            {
+                url: "asset/doc/cv2.docx",
+                icon: "file-word",
+                label: "Click to download the full experience Microsoft Word version"
+            }
+        ]
+    }
+//- the view comes here
+
+#about-me 
+.about-me
+    .about-me__header=header
+    .about-me__avatar-wrapper
+        img.about-me__avatar(src=imagePath)
+    .about-me__full-name=myFullName
+    .about-me__full-title=myTitle
+    .about-me__slogan=slogan
+
+    .about-me__title=achievement.title
+    .about-me__content=achievement.content
+
+    each button in coolStuff.buttonList
+        a(href=button.url)
+            span=button.label
+            span(class=`my-cv-2__icon--${button.icon}`)
