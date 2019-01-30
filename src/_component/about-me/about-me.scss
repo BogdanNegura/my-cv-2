@@ -11,12 +11,14 @@
 .about-me__header {
     color: $color-white;
     @extend %header
+
 }
 
 .about-me__avatar {
     border-radius: 50%;
     width: 100%;
     border: 0.5rem solid $color-atoll;
+
 }
 
 .about-me__avatar-wrapper {
@@ -44,7 +46,7 @@
 }
 
 .about-me__title {
-    font-size: 2rem; 
+   font-size: 2rem; 
 }
 
 .about-me__full-name,
@@ -86,4 +88,3 @@
     font-size: 1.5rem;
     line-height: 1.5;
 }
-
