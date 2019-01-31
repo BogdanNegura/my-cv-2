@@ -1,6 +1,47 @@
 -
     var awardHeader = '#awards'
+    var awardList = [
+    {
+        title: 'something to add',
+        description: 'something to add',
+        location: 'something to add',
+        date: 'something to add',
+    },
+    {
+        title: 'something to add1',
+        description: 'something to 1',
+        location: 'something to 1',
+        date: 'something to 1',
+    },
+    {
+        title: 'something to 2345',
+        description: 'something to 2345',
+        location: 'something to 2345',
+        date: 'something to 2345',
+    }
+    ];
 
 #award
 .award
+    //- tropfhy to title
+    //- info to description
+    //- map2 to location
+    //- calendar to date
     .award__header=awardHeader
+    each award in awardList
+        .award__card
+            .award__icon
+                span.my-cv-2__icon--trophy
+            .award__title=award.title
+            
+            .award__icon
+                span.my-cv-2__icon--info
+            .award__description=award.description
+
+            .award__icon
+                span.my-cv-2__icon--map2
+            .award__location=award.location
+
+            .award__icon
+                span.my-cv-2__icon--calendar
+            .award__date=award.date
