@@ -1,0 +1,54 @@
+//- model, data
+
+-
+    var header = '#experience'
+    var experienceList = [
+        {
+            title: 'junior web developer',
+            date: '2017',
+            company: 'the company',
+            responsabilityList: [
+                'reseponsability one',
+                'reseponsability one',
+                'reseponsability one',
+            ]
+        },
+        {
+            title: 'mid web developer',
+            date: '2018',
+            company: 'the company',
+            responsabilityList: [
+                'reseponsability one',
+                'reseponsability one',
+                'reseponsability one',
+            ]
+        },
+        {
+            title: 'senior web developer',
+            date: '2019',
+            company: 'the company',
+            responsabilityList: [
+                'reseponsability one',
+                'reseponsability one',
+                'reseponsability one',
+            ]
+        }
+    ];
+    //- view, presentation
+    
+        
+#experience
+.experience
+    .experience__header=header
+    input(type="radio", name="same-name", id="experience-default")
+    label(for="experience-default") &times;
+    each experience, key in experienceList
+        input.experience__input(type="radio", name="same-name", id=`experience-id-${key}`)
+        label.experience__title(for=`experience-id-${key}`)=experience.title   
+        .experience__details
+            .experience__top
+                .experience__date=experience.date
+                .experience__company=experience.company
+            .experience__list
+                each responsability in experience.responsabilityList
+                    .experience__responsability=responsability       
