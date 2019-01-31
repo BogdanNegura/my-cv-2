@@ -61,19 +61,20 @@
     font-size: 1.7rem;
     text-align: justify;
     padding: 1rem;
-    text-indent: 1rem;
+    text-indent: 3rem;
 }
 
 .about-me__link-list {
     text-align: center;
+    padding-bottom: 1rem;
 }
 
 .about-me__link {
-    display: block;
+    display: inline-block;
     width: 80%;
     font-size: 3rem;
     text-decoration: none;
-    border: 0.2rem solid $color-gumbo;
+    border: 0.1rem solid $color-gumbo;
     border-radius: 1rem;
     background-color: $color-white;
     color: $color-gumbo;
