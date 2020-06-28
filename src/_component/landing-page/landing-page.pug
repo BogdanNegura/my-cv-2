@@ -2,12 +2,12 @@
     var myFullName = 'Bogdan Negura'
     var myJobTitle = 'junior web developer'
     var socialList = [
-        {icon:'facebook2', url: 'https://www.facebook.com/negura.constantinbogdan'},
-        {icon:'youtube', url: 'https://www.youtube.com/'},
-        {icon:'github', url: 'https://https://github.com/BogdanNegura'},
-        {icon:'linkedin2', url: 'https://www.linkedin.com/in/bogdan-negura-267349177/'},
-        {icon:'google-plus3', url: 'https://plus.google.com/u/0/110283545212780986524'},
-        {icon:'twitter', url: 'https://twitter.com/'},
+        {name: "Facebook", icon:'facebook2', url: 'https://www.facebook.com/negura.constantinbogdan'},
+        {name: "Youtube", icon:'youtube', url: 'https://www.youtube.com/'},
+        {name: "GitHub", icon:'github', url: 'https://https://github.com/BogdanNegura'},
+        {name: "Linkedin", icon:'linkedin2', url: 'https://www.linkedin.com/in/bogdan-negura-267349177/'},
+        {name: "Google+", icon:'google-plus3', url: 'https://plus.google.com/u/0/110283545212780986524'},
+        {name: "Twitter", icon:'twitter', url: 'https://twitter.com/'},
     ]
 div#landing-page
 div.landing-page
@@ -22,10 +22,10 @@ div.landing-page
         .landing-page__box-body
             input.landing-page__box-radio(type="radio", name="awesome-radio", checked, id="default-messge-radio")
             .landing-page__box-message Click the above icons to reveal
-            .landing-page__box-header
-                .landing-page__box-info Click to visit
-                label.landing-page__box-close(for="default-message-radio") &times;
+            //- .landing-page__box-header
+            //-     .landing-page__box-info Click to visit
+            //-     label.landing-page__box-close(for="default-message-radio") &times;
             each social, key in socialList
                 input.landing-page__box-radio(type="radio", name="awesome-radio", id=`message-box-id-${key}`)
                 .landing-page__box-message
-                    a.landing-page__box-link(href=social.url, target="_black")=social.url        
+                    a.landing-page__box-link(href=social.url, target="_black")=social.name        
