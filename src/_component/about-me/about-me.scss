@@ -1,37 +1,81 @@
 .about-me {
-  background-image: radial-gradient(ellipse, $color-geraldine, $color-atoll);
+  // background-image: radial-gradient(ellipse, $color-geraldine, $color-atoll);
+  background-color: #e5e5e5;
 }
 
 .about-me__card-wrapper {
+  box-shadow: 0px 13px 25px 5px rgba(143, 143, 143, 0.87);
   display: flex;
-  width: 40rem;
-  height: 20rem;
-  background-color: red;
+  width: 70%;
   margin: auto;
+  // margin: 1rem;
 
   .about-me__card-left {
-    width: 20%;
-    background-color: yellow;
+    background-color: #f9f0ee;
+    width: 30%;
+    padding: 50px 10px;
+    text-align: center;
+
+    .about-me__avatar-wrapper {
+      // width: 150px;
+      // height: 150px;
+      // margin: auto;
+      // position: relative;
+      // border-radius: 50%;
+
+      .about-me__avatar {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        // display: none;
+      }
+    }
+
+    .about-me__location {
+      // color: #e29578;
+      color: #006d77;
+      font-weight: bold;
+    }
+
+    .about-me__email {
+      font-weight: bold;
+      color: #006d77;
+      font-size: 0.8rem;
+    }
   }
 
   .about-me__card-right {
-    width: 80%;
-    background-color: yellowgreen;
+    width: 70%;
+    background-color: #415a67;
+    padding: 10px;
 
-    .about-me__full-name {
-      font-size: 1.5rem;
-    }
+    .about-me__card-header {
+      padding: 10px;
 
-    .about-me__title {
-      font-size: 1rem;
+      .about-me__full-name {
+        font-size: 2rem;
+        text-align: center;
+        color: #f9f0ee;
+      }
+
+      .about-me__title {
+        font-size: 1rem;
+        text-align: left;
+        color: #f9f0ee;
+      }
     }
 
     .about-me__slogan,
     .about-me__content {
-      font-size: 0.5rem;
+      font-size: 0.7rem;
       text-align: justify;
-      padding: 1rem;
+      // padding: 1rem;
       text-indent: 3rem;
+      color: #e5e5e5;
+
+      &:hover {
+        color: #fff;
+      }
     }
   }
 }
@@ -39,18 +83,6 @@
 .about-me__header {
   color: $color-white;
   @extend %header;
-}
-
-.about-me__avatar-wrapper {
-  width: 100px;
-  height: 100px;
-  position: relative;
-  background-color: blue;
-  border-radius: 50%;
-  .about-me__avatar {
-    border-radius: 50%;
-    display: none;
-  }
 }
 
 // .about-me__avatar-wrapper {
