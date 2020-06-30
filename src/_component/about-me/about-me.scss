@@ -17,36 +17,37 @@
     text-align: center;
 
     .about-me__avatar-wrapper {
-      // width: 150px;
-      // height: 150px;
-      // margin: auto;
-      // position: relative;
-      // border-radius: 50%;
-
       .about-me__avatar {
         border-radius: 50%;
         width: 150px;
         height: 150px;
-        // display: none;
       }
     }
 
     .about-me__location {
-      // color: #e29578;
-      color: #006d77;
+      color: #fff;
       font-weight: bold;
+      // border: 2px solid hsl(113, 77%, 75%);
+      background-color: #42bcbd;
+      padding: 6px 4px;
+      margin-bottom: 7px;
     }
 
     .about-me__email {
       font-weight: bold;
-      color: #006d77;
+      color: #7ca1a6;
       font-size: 0.8rem;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
   .about-me__card-right {
     width: 70%;
-    background-color: #415a67;
+    background-color: #b2c7e2;
     padding: 10px;
 
     .about-me__card-header {
@@ -55,26 +56,27 @@
       .about-me__full-name {
         font-size: 2rem;
         text-align: center;
-        color: #f9f0ee;
+        color: #7e4b83;
+        font-weight: bold;
       }
 
       .about-me__title {
+        font-weight: bold;
         font-size: 1rem;
         text-align: left;
-        color: #f9f0ee;
+        color: #7e4b83;
       }
     }
 
-    .about-me__slogan,
     .about-me__content {
       font-size: 0.7rem;
       text-align: justify;
       // padding: 1rem;
       text-indent: 3rem;
-      color: #e5e5e5;
+      color: #7e4b83;
 
       &:hover {
-        color: #fff;
+        color: #d76d93;
       }
     }
   }
